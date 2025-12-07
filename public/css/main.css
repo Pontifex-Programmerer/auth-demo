@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    justify-content: end;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 2ch;
+}
+.navbar ul li:nth-child(2) {
+    margin-left: auto;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 5ch auto;
+    width: 75ch;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    gap: 2ch;
+    margin: 0 auto;
+    width: 65ch;
+}   
+
+.loginform form {
+    display: flex;
+    flex-direction: column;
+    gap:1ch;
+    width: 100%;
+}
+
+.loginform form > * {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.loginform form input {
+    width: 60%;
+}
+
+.loginform form button {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto;
+    width: 20%;
+}

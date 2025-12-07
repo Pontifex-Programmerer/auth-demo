@@ -1,0 +1,16 @@
+<nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/profile">Profile</a></li>
+        <% if(typeof user !== 'undefined' && user !== null) { %>
+            <li>
+                <form action="/logout" method="post">
+                    <button type="submit">Logout</button>
+                </form>
+            </li>
+        <% } else { %>
+            <li><a href="/login">Login</a></li>
+        <% } %>
+        </ul>
+
+</nav>

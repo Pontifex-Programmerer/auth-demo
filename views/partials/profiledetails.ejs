@@ -1,0 +1,8 @@
+<section id="user" class="centered">
+    <% if(typeof user === 'undefined' || user === null) { %>
+        <p>User information is not available.</p>   
+    <% } else { %>
+        <h2><%= user.username %>'s Profile</h2>
+        <p>Welcome <%=user.username%> <br>We are so happy to see you!</p>
+    <% } %>
+</section>
