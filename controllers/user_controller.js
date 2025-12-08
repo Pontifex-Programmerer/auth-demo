@@ -40,13 +40,13 @@ const postlogin = async (req, res) => {
 
     if (!username || !password) {
         console.warn('Login failed: Missing username or password');
-        req.session.flash = {error: 'Please provide both username and password.'};
+        createFlashMessage(req, 'error', 'Please provide both username and password.');
         res.redirect('/login');
         return;
     }
 
     console.warn('Login failed: Invalid credentials');    
-    req.session.flash = {error: 'Invalid username or password.'};
+    createFlashMessage(req, 'error', 'Wrong username or password! Please try again.');
     res.redirect('/login');
 }
 
